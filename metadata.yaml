@@ -1,0 +1,16 @@
+name: astrbot_plugin_dafeiyu_deskpet
+display_name: 大肥鱼桌宠
+short_desc: 桌宠脑端：看屏吐槽 + 本地 WebSocket
+desc: 大肥鱼桌宠 AstrBot 脑端插件。通过本地 WebSocket 驱动 Windows 透明壳；定时/点击看屏后只把文字吐槽发到主人 QQ（永不发截图）；QQ 私聊回复可镜像到壳气泡；壳内本地聊天不同步到 QQ。人格与 QQ 大肥鱼共用。
+help: 原创大肥鱼插件，由 Grok Bot (Ideas Implementation) 实现。需本机桌宠壳连接 ws://127.0.0.1:18765。
+version: 0.1.0
+author: Grok Bot (Ideas Implementation)
+repo: https://github.com/JiachengWu-5/astrbot_plugin_dafeiyu_deskpet
+support_platforms:
+  - aiocqhttp
+tags:
+  - deskpet
+  - dafeiyu
+  - websocket
+  - screen
+  - private

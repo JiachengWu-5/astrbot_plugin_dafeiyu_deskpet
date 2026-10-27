@@ -1,0 +1,56 @@
+{
+  "enabled": {
+    "description": "启用桌宠脑端",
+    "type": "bool",
+    "hint": "关闭后不启 WebSocket、不看屏、不镜像",
+    "default": true
+  },
+  "ws_host": {
+    "description": "桌宠壳 WebSocket 监听地址",
+    "type": "string",
+    "hint": "仅本机推荐 127.0.0.1",
+    "default": "127.0.0.1"
+  },
+  "ws_port": {
+    "description": "桌宠壳 WebSocket 端口",
+    "type": "int",
+    "hint": "壳默认连接 18765",
+    "default": 18765
+  },
+  "qq_uid": {
+    "description": "主人 QQ UID",
+    "type": "string",
+    "hint": "看屏吐槽与镜像只针对此 QQ",
+    "default": "407171301"
+  },
+  "screen_interval_min_sec": {
+    "description": "看屏最小间隔（秒）",
+    "type": "int",
+    "hint": "与最大值组成随机区间，默认 300",
+    "default": 300
+  },
+  "screen_interval_max_sec": {
+    "description": "看屏最大间隔（秒）",
+    "type": "int",
+    "hint": "与最小值组成随机区间，默认 900",
+    "default": 900
+  },
+  "skip_if_nothing_to_say": {
+    "description": "没话可说则跳过发 QQ",
+    "type": "bool",
+    "hint": "看屏后若模型判断无趣则不发消息",
+    "default": true
+  },
+  "enable_qq_mirror_to_shell": {
+    "description": "QQ 私聊回复镜像到壳气泡",
+    "type": "bool",
+    "hint": "大肥鱼在 QQ 的回复同步显示在桌宠气泡",
+    "default": true
+  },
+  "enable_shell_chat_to_qq": {
+    "description": "壳本地聊天同步到 QQ（禁止）",
+    "type": "bool",
+    "hint": "必须保持关闭：桌宠本地聊天不同步到 QQ",
+    "default": false
+  }
+}

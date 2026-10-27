@@ -1,0 +1,3 @@
+# Runtime deps expected from AstrBot instance venv
+# websockets>=12  (hub; present in instance venv 15.0.1)
+# aiohttp         (available as fallback; hub uses websockets)
